@@ -12,7 +12,7 @@ WORKDIR /root
 RUN git clone https://github.com/vadz/libtiff.git
 RUN mv libtiff source
 WORKDIR /root/source
-RUN git checkout 9a72a69
+RUN git checkout 3cfd62d
 RUN ./configure
 RUN make CFLAGS="-static -ggdb" CXXFLAGS="-static -ggdb"
 
